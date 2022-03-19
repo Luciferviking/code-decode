@@ -83,18 +83,44 @@ function bg_light(){
 	var light = document.getElementById("light");
 	var dark = document.getElementById("dark");
 
-	light.style.backgroundColor = "#fff";
-	light.style.color = "#0066cc"
-	dark.style.background = "#0066cc";
-	dark.style.color = "#fff"
+	var root = document.querySelector(':root');
+	var rs = getComputedStyle(root);
+	var l_primary = "#fff";
+	var l_accent = rs.getPropertyValue("--l-accent");
+  var d_primary = "#1d1d1f";
+  var d_secondary = "#282830";
+  var d_color = "#a1a1a6";
+
+  // toogle button
+	light.style.backgroundColor = d_primary;
+	light.style.color = l_accent;
+	dark.style.background = l_accent;
+	dark.style.color = l_primary;
+
+	//theme
+  root.style.setProperty('--l-primary', d_primary);
+  root.style.setProperty('--l-secondary', d_secondary);
+  root.style.setProperty('--l-color', d_color);
 }
 
 function bg_dark(){
 	var light = document.getElementById("light");
 	var dark = document.getElementById("dark");
 
+	var root = document.querySelector(':root');
+	var rs = getComputedStyle(root);
+	var l_primary = "#fff";
+	var l_secondary = "#f2f2f2";
+	var d_primary = "#1d1d1f";
+
 	dark.style.background = "#fff";
 	dark.style.color = "#0066cc"
 	light.style.backgroundColor = "#0066cc";
 	light.style.color = "#fff"
+
+	//theme
+  root.style.setProperty(d_primary, l_primary);
+  root.style.setProperty('--d-secondary', l_secondary);
+ 
+
 }

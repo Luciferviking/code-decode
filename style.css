@@ -1,11 +1,22 @@
 :root{
-	--c-secondary: #f2f2f2;
-	--c-tertiary: #0066cc;
+	--l-accent: #0066cc;
+	
+	--l-primary: #fff;
+	--l-secondary: #f2f2f2;
+	--l-tertiary:  #727274;
+	--l-color:  black;
+
+
+	--d-primary: #1d1d1f;
+	--d-secondary: #282830;
+	/*--d-tertiary:  rgb(199,199,204);*/
+	--d-color: #a1a1a6;
 }
 body{
 	all:  unset;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #fdfdfd;
+	background-color: var(--l-primary);
+	color: var(--l-color);
 }
 p{
 	margin: 0px;
@@ -16,16 +27,10 @@ h1,h2,h3,h4,h5,h6{
 section{
 	padding: 15px;
 }
-/*section:nth-child(even){
-	border: 2px solid black;
-}
-section:nth-child(odd){
-	border: 2px solid gray;
-}*/
 
 /*section-1*/
 #section-1{
-	background-color: var(--c-secondary);
+	background-color: var(--l-secondary);
 }
 #navbar{
 	display: grid;
@@ -34,22 +39,21 @@ section:nth-child(odd){
 }
 #navbar div:nth-child(1){
 	text-align: left;
-	color: #0066cc;
+	color: var(--l-accent);
 	display: grid;
 	grid-template-columns: 1fr 7fr;
 	align-items: center;
 }
 #navbar div:nth-child(3){
 	text-align: right;
-	color: #0066cc;
+	color: var(--l-accent);
 }
 /*section-2*/
 #quote{
-	/*border: 2px solid red;*/
 	width: 60%;
 	text-align: center;
 	margin: auto;
-	color: #0066cc;
+	color: var(--l-accent);
 }
 
 /*section-3*/
@@ -64,12 +68,12 @@ section:nth-child(odd){
 }
 #input_text_area{
 	margin-top: 10px;
-	border: 1px solid black;
 	height: 75px;
 	border-radius: 10px;
 	width: 97%;
 	resize: none;
-	border: 1px solid #c7c8cd;
+	border: 1px solid var(--l-tertiary);
+	background-color: var(--l-primary);
 }
 
 .textarea p{
@@ -83,7 +87,7 @@ section:nth-child(odd){
 	right: 22px;
 	top: 0px;
 	z-index: 1;
-	color: #0066cc;
+	color: var(--l-accent);
 }
 /*section-5*/
 #section-5{
@@ -102,20 +106,17 @@ section:nth-child(odd){
 	font-size: 14px;
 }
 #section-5 > div > div:nth-child(1){
-	/*border: 1px solid #0066cc;*/
 	border-radius: 8px;
-	/*background-color: #d8d8d8;*/
 	padding: 2px 10px; 
 	text-align: center;
-	/*color: #0066cc;*/
-	background-color: #0066cc;
+	background-color: var(--l-accent);
 	color: white;
 }
 
 #section-5 > div > div:nth-child(2){
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	border:1px solid #0066cc;
+	border:1px solid var(--l-accent);
 	grid-gap: 0px;
 	border-radius: 10px;
 	padding: 1px;
@@ -124,9 +125,9 @@ section:nth-child(odd){
 	font-size: 10px;
 	border-radius: 10px;
 	padding: 2px 4px;
-	color: #0066cc;
+	color: var(--l-accent);
 }
 #section-5 > div > div:nth-child(2) > p:nth-child(1){
-	background-color: #0066cc;
+	background-color: var(--l-accent);
 	color: white;
 }
