@@ -76,3 +76,25 @@ message.addEventListener('input', function handleChange(event) {
   var message_1 = event.target.value;
   console.log(message_1)
 });
+
+
+
+function bg_light(){
+	var light = document.getElementById("light");
+	var dark = document.getElementById("dark");
+
+	light.style.backgroundColor = "#fff";
+	light.style.color = "#0066cc"
+	dark.style.background = "#0066cc";
+	dark.style.color = "#fff"
+}
+
+function bg_dark(){
+	var light = document.getElementById("light");
+	var dark = document.getElementById("dark");
+
+	dark.style.background = "#fff";
+	dark.style.color = "#0066cc"
+	light.style.backgroundColor = "#0066cc";
+	light.style.color = "#fff"
+}
