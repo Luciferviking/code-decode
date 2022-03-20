@@ -78,6 +78,32 @@ message.addEventListener('input', function handleChange(event) {
 });
 
 
+//toggle theme
+function bg_dark(){
+	var light = document.getElementById("light");
+	var dark = document.getElementById("dark");
+
+	var root = document.querySelector(':root');
+	var rs = getComputedStyle(root);
+	var l_accent = rs.getPropertyValue("--l-accent");
+	
+	//setting color values
+	var l_primary = "#fff";
+	var l_secondary = "#f2f2f2";
+	var d_primary = "#1d1d1f";
+	var l_color = "black";
+
+	//toggle button theme
+	dark.style.background = l_secondary;
+	dark.style.color = l_accent;
+	light.style.backgroundColor = l_accent;
+	light.style.color = l_primary;
+
+	//theme
+  root.style.setProperty("--d-primary", l_primary);
+  root.style.setProperty('--d-secondary', l_secondary);
+  root.style.setProperty('--d-color', l_color);
+}
 
 function bg_light(){
 	var light = document.getElementById("light");
@@ -85,42 +111,22 @@ function bg_light(){
 
 	var root = document.querySelector(':root');
 	var rs = getComputedStyle(root);
-	var l_primary = "#fff";
 	var l_accent = rs.getPropertyValue("--l-accent");
+	
+	//setting color values
+	var l_primary = "#fff";
   var d_primary = "#1d1d1f";
   var d_secondary = "#282830";
   var d_color = "#a1a1a6";
 
-  // toogle button
-	light.style.backgroundColor = d_primary;
+  // toogle button theme
+	light.style.backgroundColor = d_secondary;
 	light.style.color = l_accent;
 	dark.style.background = l_accent;
 	dark.style.color = l_primary;
 
 	//theme
-  root.style.setProperty('--l-primary', d_primary);
-  root.style.setProperty('--l-secondary', d_secondary);
-  root.style.setProperty('--l-color', d_color);
-}
-
-function bg_dark(){
-	var light = document.getElementById("light");
-	var dark = document.getElementById("dark");
-
-	var root = document.querySelector(':root');
-	var rs = getComputedStyle(root);
-	var l_primary = "#fff";
-	var l_secondary = "#f2f2f2";
-	var d_primary = "#1d1d1f";
-
-	dark.style.background = "#fff";
-	dark.style.color = "#0066cc"
-	light.style.backgroundColor = "#0066cc";
-	light.style.color = "#fff"
-
-	//theme
-  root.style.setProperty(d_primary, l_primary);
-  root.style.setProperty('--d-secondary', l_secondary);
- 
-
+  root.style.setProperty('--d-primary', d_primary);
+  root.style.setProperty('--d-secondary', d_secondary);
+  root.style.setProperty('--d-color', d_color);
 }

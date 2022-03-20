@@ -3,20 +3,19 @@
 	
 	--l-primary: #fff;
 	--l-secondary: #f2f2f2;
-	--l-tertiary:  #727274;
+	--l-tertiary:  #727274;/*border color*/
 	--l-color:  black;
-
 
 	--d-primary: #1d1d1f;
 	--d-secondary: #282830;
-	/*--d-tertiary:  rgb(199,199,204);*/
-	--d-color: #a1a1a6;
+	--d-color: #a1a1a6;	
+
 }
 body{
 	all:  unset;
 	font-family: 'Open Sans', sans-serif;
-	background-color: var(--l-primary);
-	color: var(--l-color);
+	background-color: var(--d-primary);
+	color: var(--d-color);
 }
 p{
 	margin: 0px;
@@ -30,7 +29,7 @@ section{
 
 /*section-1*/
 #section-1{
-	background-color: var(--l-secondary);
+	background-color: var(--d-secondary);
 }
 #navbar{
 	display: grid;
@@ -44,10 +43,21 @@ section{
 	grid-template-columns: 1fr 7fr;
 	align-items: center;
 }
-#navbar div:nth-child(3){
+#sub-nav{
 	text-align: right;
 	color: var(--l-accent);
+	display: grid;
+	grid-template-columns: 3fr 3fr 1fr;
+	align-items: center;
 }
+#sub-nav > div:nth-child(1){
+	grid-column: 2/3;
+	border: 1px solid var(--l-accent);
+	padding: 1px;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+
 /*section-2*/
 #quote{
 	width: 60%;
@@ -73,7 +83,7 @@ section{
 	width: 97%;
 	resize: none;
 	border: 1px solid var(--l-tertiary);
-	background-color: var(--l-primary);
+	background-color: var(--d-primary);
 }
 
 .textarea p{
@@ -94,40 +104,23 @@ section{
 	padding: 0px 20px;
 }
 #section-5 > div{
-	width: 150px;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 80px auto;
-	grid-gap: 10px;
-	justify-content: center;
-	justify-items: center;
-}
-#section-5 > div > div{
-	font-size: 14px;
-}
-#section-5 > div > div:nth-child(1){
 	border-radius: 8px;
 	padding: 2px 10px; 
 	text-align: center;
 	background-color: var(--l-accent);
 	color: white;
+	width: fit-content;
+	margin: auto;
+	font-size: 14px;
 }
-
-#section-5 > div > div:nth-child(2){
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	border:1px solid var(--l-accent);
-	grid-gap: 0px;
-	border-radius: 10px;
-	padding: 1px;
-}
-#section-5 > div > div:nth-child(2) > p{
+#toggle > p{
 	font-size: 10px;
 	border-radius: 10px;
 	padding: 2px 4px;
 	color: var(--l-accent);
+	cursor: pointer;
 }
-#section-5 > div > div:nth-child(2) > p:nth-child(1){
+#toggle > p:nth-child(2){
 	background-color: var(--l-accent);
 	color: white;
 }
