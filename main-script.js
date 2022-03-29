@@ -113,7 +113,7 @@ function bg_dark() {
 	//setting color values
 	var l_primary = "#fff";
 	var l_secondary = "#f2f2f2";
-	var d_primary = "#1d1d1f";
+	var d_primary = "rgb(28,28,30)";
 	var l_color = "black";
 
 	//toggle button theme
@@ -138,8 +138,8 @@ function bg_light() {
 
 	//setting color values
 	var l_primary = "#fff";
-	var d_primary = "#1d1d1f";
-	var d_secondary = "#282830";
+	var d_primary = "rgb(28,28,30)";
+	var d_secondary = "rgb(44,44,46)";
 	var d_color = "#a1a1a6";
 
 	// toogle button theme
