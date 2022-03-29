@@ -76,7 +76,7 @@ section{
 	position: relative;
 	padding: 0px 20px 10px;
 }
-#input_text_area{
+.input_text_area{
 	margin-top: 10px;
 	height: 75px;
 	border-radius: 10px;
@@ -84,6 +84,8 @@ section{
 	resize: none;
 	border: 1px solid var(--l-tertiary);
 	background-color: var(--d-primary);
+	color: var(--d-color);
+	text-align: center;
 }
 
 .textarea p{
@@ -98,6 +100,7 @@ section{
 	top: 0px;
 	z-index: 1;
 	color: var(--l-accent);
+	cursor: pointer;
 }
 /*section-5*/
 #section-5{
@@ -123,4 +126,17 @@ section{
 #toggle > p:nth-child(2){
 	background-color: var(--l-accent);
 	color: white;
+}
+#copied_anim {
+	width: fit-content;
+	padding: 2px 7px;
+	border-radius: 8px;
+	font-size: 14px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	background-color: var(--l-accent);
+	color: #fff;
 }

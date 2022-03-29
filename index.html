@@ -35,17 +35,16 @@
 
 	<section id="section-3" class="textarea">
 		<p>Your Text</p>
-		<div id="copy"><i class="fa-regular fa-clipboard"></i></div>
-		<textarea id="input_text_area"> 
+		<!-- <div id="copy"><i class="fa-regular fa-clipboard"></i></div> -->
+		<textarea id="code_text_box" class="input_text_area" placeholder="type in something!"> 
 			
 		</textarea>
 	</section>
 
 	<section id="section-4" class="textarea">
 		<p>Coded Text</p>
-		<div id="copy"><i class="fa-regular fa-clipboard"></i></div>
-		<textarea id="input_text_area"> 
-			
+		<div id="copy"><i class="fa-regular fa-clipboard" onclick="copy()"></i></div>
+		<textarea id="coded_text_box" class="input_text_area"> 
 		</textarea>
 	</section>
 
@@ -53,9 +52,10 @@
 			<div>Customize <i class="fa-solid fa-gear"></i></div>
 	</section>
 
+	<div id="copied_anim">Copied !</div>
 
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="main-script.js"></script>
 
 </body>
 </html>
