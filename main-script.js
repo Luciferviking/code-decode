@@ -81,7 +81,7 @@ message.addEventListener("input", function handleChange(event) {
 
 //for animation of copied
 var copied_anim = document.getElementById("copied_anim");
-// copied_anim.style.display = "none";
+copied_anim.style.display = "none";
 
 //copying text
 function copy() {
