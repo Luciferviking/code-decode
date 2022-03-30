@@ -17,8 +17,8 @@
 
 	<section id="section-1">
 		<div id="navbar">
-			<div></div>
-			<div>Code-Decode</div>
+			<div><a href="index.html"><i class="fa-solid fa-chevron-left"></i></a> Home</div>
+			<div>Code</div>
 			<div id="sub-nav">
 				<!-- <div id="toggle">
 				<p id="light" onclick="bg_light()">Light</p>
@@ -29,34 +29,29 @@
 		</div>
 	</section>
 
-	<section id="hp-sec-2">
-		<div>
-			<span>Hey!</span> <br> Encrypt your message to a different character set that I have assigned for all the english alphabets and send it to your friends,
-		</div>
-		<div>
-			<span>Benefit?</span> <br>Nothing but will it be fun when they will ask what the hell is this, yes absolutely.
-		</div>
+	<section id="section-2">
+		<p id="quote">Chase your stars fool, life is short</p>
 	</section>
 
-	<section id="hp-sec-3">
-		<div>
-			<div>
-				<a href="decode.html">
-					<img id="hm-img" src="images/box-img-1.jpg">
-				</a>
-			</div>
-
-			<div>
-				<a href="code.html">
-					<img id="hm-img" src="images/box-img-1.jpg">	
-				</a>
-			</div>
-		</div>
-		<div>
-			<div><p><a href="decode.html">Decode</a></p></div>
-			<div><p><a href="code.html">Code</a></p></div>
-		</div>
+	<section id="section-3" class="textarea">
+		<p>Your Text</p>
+		<!-- <div id="copy"><i class="fa-regular fa-clipboard"></i></div> -->
+		<textarea id="code_text_box" class="input_text_area" placeholder="type in something!"> 
+			
+		</textarea>
 	</section>
+
+	<section id="section-4" class="textarea">
+		<p>Coded Text</p>
+		<div id="copy"><i class="fa-regular fa-clipboard" onclick="copy()"></i></div>
+		<textarea id="coded_text_box" class="input_text_area"> 
+		</textarea>
+	</section>
+
+	<section id="section-5">
+			<div onclick="error_show()">Customize <i class="fa-solid fa-gear"></i></div>
+	</section>
+
 
 	<section id="footer">
 		<div>
@@ -68,10 +63,12 @@
 		</div>
 	</section>
 
-
 	<p id="error">Opps! this feature isn't available yet</p>
-	<div id="copied_anim">Copied !</div> <!-- for debbuging purpose -->
+	<div id="copied_anim">Copied !</div>
+
+
 
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="code.js"></script>
 </body>
 </html>

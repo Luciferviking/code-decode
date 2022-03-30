@@ -1,13 +1,8 @@
-//element to show the coded text
-var y = document.getElementById("#");
-
-
-
 const input_cont = document.getElementById("code_text_box");
 const output_cont = document.getElementById("coded_text_box");
 
 const message = input_cont;
-console.log(message.value);
+// console.log(message.value);
 message.value = "";
 message.value += "";
 message.addEventListener("input", function handleChange(event) {
@@ -25,7 +20,7 @@ message.addEventListener("input", function handleChange(event) {
 	// message values
 	var message_1 = event.target.value;
 	var user_input = message_1.toLowerCase();
-	console.log(message_1);
+	// console.log(message_1);
 
 	var string_split_sentence = user_input.split(" "); //hello hi
 
@@ -51,7 +46,7 @@ message.addEventListener("input", function handleChange(event) {
 		}
 	}
 
-	console.log(words_letters_index);
+	// console.log(words_letters_index);
 
 	//encryting starting from here
 	var new_word_letters_array = [];
@@ -72,84 +67,9 @@ message.addEventListener("input", function handleChange(event) {
 	//change sentence
 	var change_sentence = change_words_array.join(" ");
 
-	console.log(new_word_letters_array);
-	console.log(change_words_array);
-	console.log(change_sentence);
+	// console.log(new_word_letters_array);
+	// console.log(change_words_array);
+	// console.log(change_sentence);
 
 	output_cont.innerText = change_sentence;
 });
-
-//for animation of copied
-var copied_anim = document.getElementById("copied_anim");
-copied_anim.style.display = "none";
-
-//copying text
-function copy() {
-  var copyText = output_cont;
-  // copyText.select();
-  // copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-  // alert("Copied the text: " + copyText.value);
-
-  //for animation of copied text
-  copied_anim.style.display = "block";
-	setTimeout(close_anim, 500);
-  function close_anim(){
-		copied_anim.style.display = "none";
-	}
-}
-
-
-
-//toggle theme
-function bg_dark() {
-	var light = document.getElementById("light");
-	var dark = document.getElementById("dark");
-
-	var root = document.querySelector(":root");
-	var rs = getComputedStyle(root);
-	var l_accent = rs.getPropertyValue("--l-accent");
-
-	//setting color values
-	var l_primary = "#fff";
-	var l_secondary = "#f2f2f2";
-	var d_primary = "rgb(28,28,30)";
-	var l_color = "black";
-
-	//toggle button theme
-	dark.style.background = l_secondary;
-	dark.style.color = l_accent;
-	light.style.backgroundColor = l_accent;
-	light.style.color = l_primary;
-
-	//theme
-	root.style.setProperty("--d-primary", l_primary);
-	root.style.setProperty("--d-secondary", l_secondary);
-	root.style.setProperty("--d-color", l_color);
-}
-
-function bg_light() {
-	var light = document.getElementById("light");
-	var dark = document.getElementById("dark");
-
-	var root = document.querySelector(":root");
-	var rs = getComputedStyle(root);
-	var l_accent = rs.getPropertyValue("--l-accent");
-
-	//setting color values
-	var l_primary = "#fff";
-	var d_primary = "rgb(28,28,30)";
-	var d_secondary = "rgb(44,44,46)";
-	var d_color = "#a1a1a6";
-
-	// toogle button theme
-	light.style.backgroundColor = d_secondary;
-	light.style.color = l_accent;
-	dark.style.background = l_accent;
-	dark.style.color = l_primary;
-
-	//theme
-	root.style.setProperty("--d-primary", d_primary);
-	root.style.setProperty("--d-secondary", d_secondary);
-	root.style.setProperty("--d-color", d_color);
-}
