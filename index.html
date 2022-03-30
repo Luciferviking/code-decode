@@ -24,7 +24,7 @@
 				<p id="light" onclick="bg_light()">Light</p>
 				<p id="dark" onclick="bg_dark()">Dark</p>
 				</div> -->
-				<i onclick="error_show()" class="fa-solid fa-grip-lines"></i>
+				<i onclick="error_show(), vibrate()" class="fa-solid fa-grip-lines"></i>
 			</div>
 		</div>
 	</section>
@@ -41,30 +41,30 @@
 	<section id="hp-sec-3">
 		<div>
 			<div>
-				<a href="decode.html">
+				<a href="decode.html" onclick="vibrate()">
 					<img id="hm-img" src="images/box-img-1.jpg">
 				</a>
 			</div>
 
 			<div>
-				<a href="code.html">
+				<a href="code.html" onclick="vibrate()">
 					<img id="hm-img" src="images/box-img-1.jpg">	
 				</a>
 			</div>
 		</div>
 		<div>
-			<div><p><a href="decode.html">Decode</a></p></div>
-			<div><p><a href="code.html">Code</a></p></div>
+			<div><p><a href="decode.html" onclick="vibrate()">Decode</a></p></div>
+			<div><p><a href="code.html" onclick="vibrate()">Code</a></p></div>
 		</div>
 	</section>
 
-	<section id="footer">
+	<section id="hm-footer">
 		<div>
 			<div id="toggle-switch">
-				<p id="light" onclick="bg_light()">Light</p>
-				<p id="dark" onclick="bg_dark()">Dark</p>
+				<p id="light" onclick="bg_light(), vibrate()">Light</p>
+				<p id="dark" onclick="bg_dark(), vibrate()">Dark</p>
 			</div>
-			<div id="branding"><a href="https://bit.ly/3uDpTtT">Don't Click!</a></div>
+			<div id="branding"><a onclick="vibrate()" href="https://bit.ly/3uDpTtT">Don't Click!</a></div>
 		</div>
 	</section>
 

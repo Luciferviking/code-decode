@@ -223,8 +223,12 @@ section{
 
 
 #footer{
-	position: fixed;
-	bottom: 30px;
+	margin-top: 140px;
+	width: 100vw;
+	box-sizing: border-box;
+}
+#hm-footer{
+	margin-top: 70px;
 	width: 100vw;
 	box-sizing: border-box;
 
@@ -250,6 +254,9 @@ section{
 	color: #fff;
 }
 #footer div div:nth-child(2){
+	margin-top: 10px;
+}
+#hm-footer div div:nth-child(2){
 	margin-top: 10px;
 }
 #error{

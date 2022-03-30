@@ -83,3 +83,9 @@ function bg_light() {
 	root.style.setProperty("--d-secondary", d_secondary);
 	root.style.setProperty("--d-color", d_color);
 }
+
+//vibrations
+function vibrate() {
+  navigator.vibrate(150);
+  console.log("triggered");
+};
