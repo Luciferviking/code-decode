@@ -58,6 +58,9 @@ section{
 	display: grid;
 	align-items: center;
 }
+#hm-nav-mid{
+	font-size: 14px;
+}
 #navbar div:nth-child(3){
 	text-align: right;
 	color: var(--l-accent);
