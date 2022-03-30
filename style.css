@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 :root{
 	--l-accent: #0066cc;
 	--l-accent-2:  rgb(88,86,214);
@@ -11,6 +12,9 @@
 	--d-primary:  rgb(28,28,30);
 	--d-secondary:  rgb(44,44,46);
 	--d-color: #a1a1a6;	/*#282830*/
+
+	/*font-family: 'Comfortaa', cursive;*/
+	--font-2:  'Comfortaa', cursive;
 
 }
 body{
@@ -47,6 +51,11 @@ section{
 	color: var(--l-accent);
 	display: grid;
 	grid-template-columns: 1fr 7fr;
+	align-items: center;
+}
+#navbar div:nth-child(2){
+	font-family: var(--font-2);
+	display: grid;
 	align-items: center;
 }
 #navbar div:nth-child(3){

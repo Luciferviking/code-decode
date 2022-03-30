@@ -87,5 +87,5 @@ function bg_light() {
 //vibrations
 function vibrate() {
   navigator.vibrate(100);
-  console.log("triggered");
+  // console.log("triggered");
 };
