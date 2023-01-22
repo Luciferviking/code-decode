@@ -37,6 +37,9 @@ section{
 	padding: 15px;
 }
 
+.PointerCursor{
+	cursor: pointer;
+}
 /*section-1*/
 #section-1{
 	background-color: var(--d-secondary);
