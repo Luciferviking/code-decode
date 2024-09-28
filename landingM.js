@@ -12,7 +12,7 @@
    gsap.to(("#centerL, #centerL2, #ltrRound1"), 1, {x:87}); 
   }
   function enlarge(){
-    gsap.to(("#enlarge"),1,{display: "block", fontSize: 7500});
+    gsap.to(("#enlarge"),1,{display: "block", fontSize: 8000});
   }
 
   setTimeout(topArray, 1010);
