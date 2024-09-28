@@ -16,7 +16,7 @@
   }
 
   function enlargeBox(){
-    gsap.to(("#enlargeBox"), 1, {display: "block", width: 100vw});
+    gsap.to(("#enlargeBox"),1,{display: "block", width: "100vw"});
   }
   
 
