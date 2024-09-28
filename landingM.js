@@ -25,7 +25,7 @@
   setTimeout(centerR, 2010);
   setTimeout(centerL, 2010);
   setTimeout(enlarge, 3010);
-  setTimeout(enlargeBox, 3200);
+  setTimeout(enlargeBox, 3010);
 
   setTimeout(function(){
     var element = document.getElementById("homepage");
