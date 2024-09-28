@@ -24,12 +24,12 @@
   setTimeout(lowArray, 1010);
   setTimeout(centerR, 2010);
   setTimeout(centerL, 2010);
-  setTimeout(enlarge, 3010);
+  setTimeout(enlarge, 2810);
   setTimeout(enlargeBox, 3010);
 
   setTimeout(function(){
     var element = document.getElementById("homepage");
     element.click();  
     console.log("clicked");
-  }, 4010);
+  }, 4210);
  
