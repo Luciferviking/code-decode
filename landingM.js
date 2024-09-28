@@ -31,5 +31,5 @@
     var element = document.getElementById("homepage");
     element.click();  
     console.log("clicked");
-  }, 4210);
+  }, 4010);
  
