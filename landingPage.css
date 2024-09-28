@@ -44,6 +44,6 @@
     display: none;
     height: 100vh;
     width: 100px;
-    background-color: --d-color;
+    background-color: var(--d-color);
     z-index: 1;
 }
