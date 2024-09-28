@@ -15,11 +15,17 @@
     gsap.to(("#enlarge"),1,{display: "block", fontSize: 8000});
   }
 
+  function enlargeBox(){
+    gsap.to(("enlargeBox"), 1, {display: "block", width: 100vw});
+  }
+  
+
   setTimeout(topArray, 1010);
   setTimeout(lowArray, 1010);
   setTimeout(centerR, 2010);
   setTimeout(centerL, 2010);
   setTimeout(enlarge, 3010);
+  setTimeout(enlargeBox, 3510);
 
 
   setTimeout(function(){
